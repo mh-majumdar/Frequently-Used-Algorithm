@@ -1,0 +1,12 @@
+// Binary Exponential(Recursive Method)
+
+ll binary_exponential(ll a,ll b){
+  if(b==0) return 1;
+  ll ans=binary_exponential(a,b/2);
+  if(b%2==0){
+  	return ans*ans;
+  }
+  else{
+  	return a*ans*ans;
+  }
+}
